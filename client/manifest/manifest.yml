@@ -1,0 +1,6 @@
+---
+applications:
+- name: testapp-client
+  path: ../target/testapp-client-1.0.0-SNAPSHOT.jar
+  services:
+   - statica-gemfire-service

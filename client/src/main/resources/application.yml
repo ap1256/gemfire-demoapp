@@ -1,0 +1,6 @@
+gemfire:
+  locators:
+  - host: classic-gemfire-locator-0-1022373844.us-west-2.elb.amazonaws.com
+    port: 10334
+  - host: classic-gemfire-locator-1-501366458.us-west-2.elb.amazonaws.com
+    port: 10334
