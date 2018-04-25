@@ -7,6 +7,9 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.sample.geode.demoapp.model.Customer;
+import com.sample.geode.demoapp.model.CustomerOrder;
+import com.sample.geode.demoapp.model.Item;
 import org.apache.geode.cache.GemFireCache;
 import org.apache.geode.cache.Region;
 import org.junit.After;
@@ -21,9 +24,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.sample.geode.demoapp.client.ClientApplication;
-import io.pivotal.bds.gemfire.testapp.model.Customer;
-import io.pivotal.bds.gemfire.testapp.model.CustomerOrder;
-import io.pivotal.bds.gemfire.testapp.model.Item;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { ClientApplication.class })

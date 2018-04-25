@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.sample.geode.demoapp.model.CustomerOrder;
 import org.apache.geode.cache.Region;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +30,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.pivotal.bds.gemfire.testapp.model.CustomerOrder;
 
 public class CustomerOrderControllerTest {
 

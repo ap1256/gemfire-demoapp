@@ -1,0 +1,17 @@
+
+description = ''
+dependencies {
+    compile project(':demoapp-model')
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.7.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version:'1.4.7.RELEASE'
+    compile group: 'io.pivotal.gemfire', name: 'geode-core', version:'9.1.0'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version:'2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version:'2.7.0'
+
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.4.7.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+    testCompile group: 'net.javacrumbs.json-unit', name: 'json-unit', version:'1.25.0'
+    testCompile group: 'net.javacrumbs.json-unit', name: 'json-unit-fluent', version:'1.25.0'
+}

@@ -1,0 +1,9 @@
+
+description = ''
+dependencies {
+  compile project(':demoapp-model')
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.4.7.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+    compile group: 'io.pivotal.gemfire', name: 'geode-core', version:'9.1.0'
+}

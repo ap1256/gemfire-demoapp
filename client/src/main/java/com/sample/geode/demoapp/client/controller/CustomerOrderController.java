@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.pivotal.bds.gemfire.testapp.model.CustomerOrder;
+import com.sample.geode.demoapp.model.CustomerOrder;
 
 @RestController
 public class CustomerOrderController {

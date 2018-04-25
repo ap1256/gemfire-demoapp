@@ -1,0 +1,8 @@
+rootProject.name = 'demoapp'
+include ':demoapp-model'
+include ':demoapp-function'
+include ':demoapp-client'
+
+project(':demoapp-model').projectDir = "$rootDir/model" as File
+project(':demoapp-function').projectDir = "$rootDir/function" as File
+project(':demoapp-client').projectDir = "$rootDir/client" as File

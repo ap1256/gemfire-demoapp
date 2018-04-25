@@ -11,6 +11,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.sample.geode.demoapp.model.Customer;
 import org.apache.geode.cache.Region;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,8 +24,6 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import io.pivotal.bds.gemfire.testapp.model.Customer;
 
 public class CustomerControllerTest {
 

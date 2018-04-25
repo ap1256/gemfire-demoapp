@@ -23,9 +23,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import com.sample.geode.demoapp.client.config.GemfireProperties.LocatorProperties;
-import io.pivotal.bds.gemfire.testapp.model.Customer;
-import io.pivotal.bds.gemfire.testapp.model.CustomerOrder;
-import io.pivotal.bds.gemfire.testapp.model.Item;
+import com.sample.geode.demoapp.model.Customer;
+import com.sample.geode.demoapp.model.CustomerOrder;
+import com.sample.geode.demoapp.model.Item;
 
 @Configuration
 @EnableConfigurationProperties(GemfireProperties.class)
@@ -46,7 +46,7 @@ public class GemfireConfig {
 
 		ccf.setPdxPersistent(false);
 		ccf.setPdxReadSerialized(false);
-		ccf.setPdxSerializer(new ReflectionBasedAutoSerializer("io.pivotal.bds.gemfire.testapp.model.*"));
+		ccf.setPdxSerializer(new ReflectionBasedAutoSerializer("com.sample.geode.demoapp.model.*"));
 
 		addLocators(ccf, gemfireProperties);
 

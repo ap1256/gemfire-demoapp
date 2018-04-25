@@ -11,6 +11,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.sample.geode.demoapp.model.Item;
 import org.apache.geode.cache.Region;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +25,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.pivotal.bds.gemfire.testapp.model.Item;
 
 public class ItemControllerTest {
 

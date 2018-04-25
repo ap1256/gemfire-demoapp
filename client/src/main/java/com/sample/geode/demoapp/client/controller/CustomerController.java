@@ -1,5 +1,6 @@
 package com.sample.geode.demoapp.client.controller;
 
+import com.sample.geode.demoapp.model.Customer;
 import org.apache.geode.cache.Region;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.pivotal.bds.gemfire.testapp.model.Customer;
 
 @RestController
 public class CustomerController {
